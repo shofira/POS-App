@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "AirbnbCerealBook";
+  src: url("../font/AirbnbCerealBold.ttf");
+  background: rgba(190, 195, 202, 0.3);
+}
+
+.header {
+  display: flex;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+header.main-header {
+  flex: 2.4;
+}
+
+header.main-header .navbar {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+.content {
+  box-sizing: border-box;
+}
+
+aside.sidebar-left {
+  background-color: blue;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  flex: 0.5;
+  padding: 15px;
+}
+
+
+main {
+  background-color: orange;
+  flex: 3;
+}
+
+aside.sidebar-cart {
+  background-color: red;
+  background: #FFFFFF;
+  border: 1px solid #CECECE;
+  flex: 1.5;
+  text-align: center;
+}
+
+/* responsive */
+@media(min-width: 800px) {
+  .content {
+    display: flex;
+    justify-content: center;
+  }
+
+  aside.sidebar-left a img {
+    display: block;
+    padding: 15px;
+  }
+
+  header.cart-header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    flex: 1;
+  }
+
+  header.cart-header h4 {
+    padding-top: 15px;
+  }
+
+}
