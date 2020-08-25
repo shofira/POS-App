@@ -53,6 +53,12 @@ aside.sidebar-cart {
   text-align: center;
 }
 
+.badge-cart {
+  background-color: #57cad5;
+  color: white;
+  border-radius: 50px;
+}
+
 /* modal */
 .btn {
   color: white;

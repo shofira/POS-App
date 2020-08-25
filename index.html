@@ -35,7 +35,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Checkout</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Add New Items</h5>
               <button
                 type="button"
                 class="close"
@@ -46,14 +46,34 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <form action="#">
+                <div class="form-group">
+                  <label>Menu</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label>Price</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="button"
+                    class="btn btn-secondary btn-sm"
+                    value="Upload"
+                  />
+                  <label> Upload image</label>
+                </div>
+              </form>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-print" data-dismiss="modal">
-                Print
+              <button type="button" class="btn btn-success">Save</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Cancel
               </button>
-              <p>or</p>
-              <button type="button" class="btn btn-send">Send Email</button>
             </div>
           </div>
         </div>
@@ -78,7 +98,9 @@
           </nav>
         </header>
         <header class="cart-header d-none d-md-block">
-          <h4 class="text-center">Cart</h4>
+          <h4 class="text-center">
+            Cart <span class="badge badge-cart">4</span>
+          </h4>
         </header>
       </div>
 
@@ -86,7 +108,7 @@
         <!-- sidebar -->
         <aside class="sidebar-left" id="sidebarCollapse">
           <a href="#"><img src="assets/images/fork.png" /></a>
-          <a href="#"><img src="assets/images/clipboard.png" /></a>
+          <a href="cart.html"><img src="assets/images/clipboard.png" /></a>
           <a href="#"
             ><img
               src="assets/images/add.png"
