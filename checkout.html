@@ -78,6 +78,73 @@
         </div>
       </div>
 
+      <!-- Modal checkout -->
+      <div
+        class="modal fade"
+        id="checkout"
+        tabindex="-1"
+        aria-labelledby="checkoutLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container-fluid">
+                <div class="row">
+                  <h5 class="modal-title" id="checkoutLabel">Checkout</h5>
+                  <div class="col-md-5 ml-auto">Receipt no: #273491</div>
+                </div>
+                <div class="row">
+                  <div>Cashier: Pevita Pearce</div>
+                </div>
+              </div>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row mb-3">
+                  <div class="col-md-6">Coffee Latte 1x</div>
+                  <div class="col-md-3 ml-auto">Rp. 15.000</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">Black Forest 1x</div>
+                  <div class="col-md-3 ml-auto">Rp. 30.000</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">Salmon Truffle Teriyaki 1x</div>
+                  <div class="col-md-3 ml-auto">Rp. 60.000</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">Ppn 10%</div>
+                  <div class="col-md-3 ml-auto">Rp. 10.500</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-4 ml-auto">Total: Rp. 115.500</div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-6">Payment: Cash</div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-pink btn-modal">
+                Print
+              </button>
+              <button type="button" class="btn btn-cyan btn-modal">
+                Send Email
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- header -->
       <div class="header sticky-top">
         <header class="main-header">
@@ -196,12 +263,99 @@
 
         <!-- Sidebar Cart -->
         <aside class="sidebar-cart">
-          <img src="assets/images/cart.png" alt="Cart Empty" />
-          <h5>Your Cart is Empty</h5>
-          <p class="text-muted mb-5">Please add some items from the menu</p>
+          <div class="container">
+            <div class="row ml-4 mt-3 mb-4">
+              <img src="assets/images/2.png" class="img-fluid mr-4 img-cart" />
+              <div class="description">
+                <h4 class="text-left"><b>Coffee Latte</b></h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-success">
+                    -
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success"
+                    disabled
+                  >
+                    1
+                  </button>
+                  <button type="button" class="btn btn-outline-success">
+                    +
+                  </button>
+                </div>
+                <b class="ml-5">Rp. 15.000</b>
+              </div>
+            </div>
+
+            <div class="row ml-4 mt-3 mb-4">
+              <img src="assets/images/6.png" class="img-fluid mr-4 img-cart" />
+              <div class="description">
+                <h4 class="text-left"><b>Black Forest</b></h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-success">
+                    -
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success"
+                    disabled
+                  >
+                    1
+                  </button>
+                  <button type="button" class="btn btn-outline-success">
+                    +
+                  </button>
+                </div>
+                <b class="ml-5">Rp. 30.000</b>
+              </div>
+            </div>
+
+            <div class="row ml-4 mt-3 mb-4">
+              <img src="assets/images/8.png" class="img-fluid mr-4 img-cart" />
+              <div class="description">
+                <h4 class="text-left"><b>Salmon Truffle</b></h4>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-outline-success">
+                    -
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-outline-success"
+                    disabled
+                  >
+                    1
+                  </button>
+                  <button type="button" class="btn btn-outline-success">
+                    +
+                  </button>
+                </div>
+                <b class="ml-5">Rp. 60.000</b>
+              </div>
+            </div>
+            <!-- Total -->
+            <div class="total ml-4 mb-4">
+              <b>Total:</b> <b>Rp. 105.000*</b>
+
+              <p>*Belum termasuk ppn</p>
+              <input
+                type="button"
+                class="btn btn-cyan btn-modal"
+                value="Checkout"
+                data-toggle="modal"
+                data-target="#checkout"
+              />
+              <input
+                type="button"
+                class="btn btn-pink btn-modal"
+                value="Cancel"
+              />
+            </div>
+          </div>
         </aside>
       </div>
+      <!-- end content -->
     </div>
+    <!-- end wrapper -->
 
     <!-- Bootstrap JS -->
     <script

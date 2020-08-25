@@ -46,11 +46,14 @@ main {
 }
 
 aside.sidebar-cart {
-  background-color: red;
-  background: #ffffff;
+  background-color: #fff;
   border: 1px solid #cecece;
   flex: 1.5;
   text-align: center;
+}
+
+aside.sidebar-cart img.img-cart {
+  width: 100px;
 }
 
 .badge-cart {
@@ -62,27 +65,38 @@ aside.sidebar-cart {
 
 /* modal */
 .btn {
-  color: white;
   font-weight: bold;
 }
 
 .btn-pink {
+  color: white;
   background-color: #f24f8a;
 }
 
 .btn-cyan {
+  color: white;
   background-color: #57cad5;
 }
 
 .btn-modal {
   width: 100%;
+  padding: 10px;
+  margin: 5px;
 }
 
 /* responsive */
+@media (min-width: 1400px) {
+  .total {
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+  }
+}
+
 @media (min-width: 768px) {
   .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   aside.sidebar-left a img {
@@ -98,5 +112,11 @@ aside.sidebar-cart {
 
   header.cart-header h4 {
     padding-top: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .content {
+    text-align: center;
   }
 }
