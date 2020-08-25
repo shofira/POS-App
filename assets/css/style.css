@@ -57,22 +57,24 @@ aside.sidebar-cart {
   background-color: #57cad5;
   color: white;
   border-radius: 50px;
+  height: 25px;
 }
 
 /* modal */
 .btn {
   color: white;
+  font-weight: bold;
 }
 
-.btn-print {
+.btn-pink {
   background-color: #f24f8a;
-  border-radius: 10px;
-  width: 100%;
 }
 
-.btn-send {
+.btn-cyan {
   background-color: #57cad5;
-  border-radius: 10px;
+}
+
+.btn-modal {
   width: 100%;
 }
 
