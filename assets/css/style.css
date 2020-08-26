@@ -198,6 +198,29 @@ aside.sidebar-cart img.img-cart {
   header.cart-header h4 {
     padding-top: 15px;
   }
+
+  .ellipse {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+
+    background: rgba(253, 211, 228, 0.3);
+  }
+
+  .ellipse-satu {
+    left: 50%;
+    top: 40px;
+  }
+
+  .ellipse-dua {
+    left: 60%;
+    top: 25px;
+  }
+  .ellipse-tiga {
+    left: 70%;
+    top: 10px;
+  }
 }
 
 @media (max-width: 576px) {
