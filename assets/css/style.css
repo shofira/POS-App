@@ -62,12 +62,11 @@ main {
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-
 .middle {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -80,6 +79,10 @@ main {
 
 .box:hover .middle {
   opacity: 1;
+}
+
+.middle .active {
+  opacity: 1 !important;
 }
 
 aside.sidebar-cart {
@@ -171,14 +174,8 @@ aside.sidebar-cart img.img-cart {
   .total {
     position: absolute;
     bottom: 0;
-    width: 350px;
+    width: 400px;
   }
-
-  /* .card {
-    flex: 3;
-    display: flex;
-    box-sizing: border-box;
-  } */
 }
 
 @media (min-width: 768px) {
