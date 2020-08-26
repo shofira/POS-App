@@ -4,16 +4,16 @@ body {
   padding: 0;
 }
 
-/* @font-face {
+@font-face {
   font-family: "AirbnbCerealBook";
   font-style: normal;
   font-weight: normal;
-  src: url("../font/AirbnbCerealBook.ttf");
+  src: url("../font/AirbnbCerealBook.woff");
 }
 
 * {
   font-family: "AirbnbCerealBook";
-} */
+}
 
 body {
   background: rgba(190, 195, 202, 0.3);
