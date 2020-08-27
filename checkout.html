@@ -188,25 +188,21 @@
           <div class="container mb-3">
             <div class="row mt-4">
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/1.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/1.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
                   </div>
-                  <p>
-                    Espresso <br />
-                    <b>Rp. 10.000</b>
-                  </p>
                 </div>
+                <p>
+                  Espresso <br />
+                  <b>Rp. 10.000</b>
+                </p>
               </div>
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/2.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/2.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -219,10 +215,8 @@
               </div>
 
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/3.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/3.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -237,10 +231,8 @@
 
             <div class="row mt-3">
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/4.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/4.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -252,10 +244,8 @@
                 </p>
               </div>
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/5.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/5.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -267,10 +257,8 @@
                 </p>
               </div>
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/6.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/6.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -284,10 +272,8 @@
             </div>
             <div class="row mt-3">
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/7.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/7.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -299,10 +285,8 @@
                 </p>
               </div>
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/8.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/8.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -314,10 +298,8 @@
                 </p>
               </div>
               <div class="col-sm-4">
-                <div class="box">
-                  <a class="image-menu" id="imgMenu">
-                    <img src="assets/images/9.png" class="img-fluid"
-                  /></a>
+                <div class="onClickTextOverImage">
+                  <img src="assets/images/9.png" class="img-fluid" />
                   <!-- tick -->
                   <div class="middle">
                     <img src="assets/images/tick.png" />
@@ -449,9 +431,14 @@
     ></script>
 
     <script type="text/javascript">
-      $(document).on("click", ".image-menu", function () {
-        $(".middle").toggleClass("active");
-      });
+      // var textOverImages = document.getElementsByClassName(
+      //   "onClickTextOverImage"
+      // );
+      // textOverImages.onclick = function () {
+      //   textOverImages.classList.remove("show");
+      //   textOverImages = this;
+      //   classes.add("show");
+      // };
     </script>
   </body>
 </html>
