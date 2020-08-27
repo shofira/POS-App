@@ -19,6 +19,7 @@ body {
   background: rgba(190, 195, 202, 0.3);
 }
 
+/* header */
 .header {
   display: flex;
   box-sizing: border-box;
@@ -38,6 +39,7 @@ header.cart-header h4 {
   overflow: hidden;
 }
 
+/* content */
 .content {
   box-sizing: border-box;
 }
@@ -96,7 +98,7 @@ aside.sidebar-cart img.img-cart {
   height: 25px;
 }
 
-/* modal */
+/* button */
 .btn {
   font-weight: bold;
 }
@@ -117,6 +119,7 @@ aside.sidebar-cart img.img-cart {
   margin: 5px;
 }
 
+/* info page history */
 .card-left {
   background: linear-gradient(
     278.29deg,
@@ -125,7 +128,6 @@ aside.sidebar-cart img.img-cart {
   );
   filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
   border-radius: 10px;
-  margin: 25px;
 }
 
 .card-middle {
@@ -136,7 +138,6 @@ aside.sidebar-cart img.img-cart {
   );
   filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
   border-radius: 10px;
-  margin: 25px;
 }
 
 .card-right {
@@ -147,15 +148,39 @@ aside.sidebar-cart img.img-cart {
   );
   filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
   border-radius: 10px;
-  margin: 25px;
 }
 
+/* Chart */
 .card.chart {
   background: #ffffff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
 
+.ellipse {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+
+  background: rgba(253, 211, 228, 0.3);
+}
+
+.ellipse-satu {
+  left: 50%;
+  top: 40px;
+}
+
+.ellipse-dua {
+  left: 60%;
+  top: 25px;
+}
+.ellipse-tiga {
+  left: 70%;
+  top: 10px;
+}
+
+/* Table */
 .select {
   background: #cecece;
   border-radius: 10px;
@@ -191,33 +216,10 @@ aside.sidebar-cart img.img-cart {
   header.cart-header h4 {
     padding-top: 15px;
   }
-
-  .ellipse {
-    position: absolute;
-    width: 70px;
-    height: 70px;
-    border-radius: 50px;
-
-    background: rgba(253, 211, 228, 0.3);
-  }
-
-  .ellipse-satu {
-    left: 50%;
-    top: 40px;
-  }
-
-  .ellipse-dua {
-    left: 60%;
-    top: 25px;
-  }
-  .ellipse-tiga {
-    left: 70%;
-    top: 10px;
-  }
 }
 
 @media (max-width: 576px) {
-  .content {
+  main {
     text-align: center;
   }
 }
