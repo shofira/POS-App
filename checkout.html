@@ -191,7 +191,7 @@
                 <div class="onClickTextOverImage">
                   <img src="assets/images/1.png" class="img-fluid" />
                   <!-- tick -->
-                  <div class="middle">
+                  <div class="middle" id="clickImage" onclick="Choice()">
                     <img src="assets/images/tick.png" />
                   </div>
                 </div>
@@ -204,7 +204,7 @@
                 <div class="onClickTextOverImage">
                   <img src="assets/images/2.png" class="img-fluid" />
                   <!-- tick -->
-                  <div class="middle">
+                  <div class="middle" id="clickImage" onclick="Choice()">
                     <img src="assets/images/tick.png" />
                   </div>
                 </div>
@@ -218,7 +218,7 @@
                 <div class="onClickTextOverImage">
                   <img src="assets/images/3.png" class="img-fluid" />
                   <!-- tick -->
-                  <div class="middle">
+                  <div class="middle" id="clickImage" onclick="Choice()">
                     <img src="assets/images/tick.png" />
                   </div>
                 </div>
@@ -234,7 +234,7 @@
                 <div class="onClickTextOverImage">
                   <img src="assets/images/4.png" class="img-fluid" />
                   <!-- tick -->
-                  <div class="middle">
+                  <div class="middle" id="clickImage" onclick="Choice()">
                     <img src="assets/images/tick.png" />
                   </div>
                 </div>
@@ -247,7 +247,7 @@
                 <div class="onClickTextOverImage">
                   <img src="assets/images/5.png" class="img-fluid" />
                   <!-- tick -->
-                  <div class="middle">
+                  <div class="middle" id="clickImage" onclick="Choice()">
                     <img src="assets/images/tick.png" />
                   </div>
                 </div>
@@ -431,14 +431,16 @@
     ></script>
 
     <script type="text/javascript">
-      // var textOverImages = document.getElementsByClassName(
-      //   "onClickTextOverImage"
-      // );
-      // textOverImages.onclick = function () {
-      //   textOverImages.classList.remove("show");
-      //   textOverImages = this;
-      //   classes.add("show");
-      // };
+      function Choice() {
+        var box = document.getElementById("clickImage");
+
+        box.onclick = function () {
+          box.style.opacity = 1;
+        };
+        box.ondblclick = function () {
+          box.style.opacity = 0;
+        };
+      }
     </script>
   </body>
 </html>
