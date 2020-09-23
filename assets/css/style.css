@@ -1,7 +1,7 @@
-html,
-body {
+* {
   margin: 0;
   padding: 0;
+  font-family: "AirbnbCerealBook";
 }
 
 @font-face {
@@ -9,10 +9,6 @@ body {
   font-style: normal;
   font-weight: normal;
   src: url("../font/AirbnbCerealBook.woff");
-}
-
-* {
-  font-family: "AirbnbCerealBook";
 }
 
 body {
@@ -209,7 +205,6 @@ aside.sidebar-cart img.img-cart {
   aside.sidebar-left a img {
     display: block;
     padding-top: 50px;
-    /* padding: 55px 0 0 40px; */
   }
 
   header.cart-header {
@@ -224,6 +219,10 @@ aside.sidebar-cart img.img-cart {
 }
 
 @media (max-width: 576px) {
+  aside.sidebar-left img {
+    padding: 1vh 4vh 1vh 5vh;
+  }
+
   main {
     text-align: center;
   }
